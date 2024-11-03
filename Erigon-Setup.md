@@ -13,7 +13,6 @@ This guide provides step-by-step instructions to set up your development environ
    - [Install C Compiler](#install-c-compiler)
    - [Install Wget](#install-wget)
    - [Install Go](#install-go)
-   - [Install Docker and Docker Compose](#install-docker-and-docker-compose)
 2. [Start Erigon Node using Binary](#clone-the-repo)
 3. [Erigon Node with Docker & Docker Compose](#start-erigon-node-using-docker)
 4. [Access Your Container](#access-your-container)
