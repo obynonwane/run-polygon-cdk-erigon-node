@@ -1,5 +1,8 @@
 # Installation and Setup Guide
 
+[Official CDK Github Repository](https://github.com/0xPolygonHermez/cdk-erigon)
+[Official CDK Documentation](https://docs.polygon.technology/cdk/getting-started/cdk-erigon/deploy-cdk-erigon/)
+
 This guide provides step-by-step instructions to set up your development environment with the necessary tools and start an Erigon node using Docker.
 
 ## Table of Contents
