@@ -115,7 +115,7 @@ This guide provides step-by-step instructions to set up your development environ
    ```bash
    make cdk-erigon
    ```
-6. **Edit Config file & execute, {network} is either cardona or mainnet use the hermezconfig-example.yaml file as guide:**
+6. **Edit Config file, {network} is either cardona or mainnet. Edit hermezconfig-cardona.yaml.example or hermezconfig-mainnet.yaml.example if you running either a testnet or mainnet node:**
    ```bash
    sudo ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
    ```
