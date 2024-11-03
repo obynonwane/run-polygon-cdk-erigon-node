@@ -176,8 +176,13 @@ This guide provides step-by-step instructions to set up your development environ
 
 ## Start Erigon Node using Docker
 To start the Erigon node, run the following command:
+#### For testnet
 ```bash
 sudo docker run -d -p 8545:8545 -v ./cdk-erigon-data/:/data/erigon/testnet hermeznetwork/cdk-erigon --config="./cardona.yaml" --zkevm.l1-rpc-url=https://rpc.sepolia.org
+```
+#### For mainnet
+```bash
+sudo docker run -d -p 8545:8545 -v ./cdk-erigon-data/:/data/erigon/mainnet hermeznetwork/cdk-erigon  --config="./mainnet.yaml" --zkevm.l1-rpc-url=https://rpc.eth.gateway.fm
 ```
 
 ## Access Your Container
@@ -193,18 +198,18 @@ sudo docker kill <container-id>
 ```
 
 ## Start Erigon Node Using Docker Compose File
-To start the Erigon node with Docker Compose, set the environment variables and run:
+Set the environment variables and edit/rename/copy docker-compose-example.yml to docker-compose-{network}.yml accordingly:
 #### For testnet
 ```bash
 NETWORK=cardona 
 L1_RPC_URL=https://rpc.sepolia.org
-sudo docker-compose -f docker-compose-{network}.yml up -d
+sudo docker-compose -f docker-compose-cardona.yml up -d
 ```
 #### For mainnet
 ```bash
 NETWORK=mainnet 
 L1_RPC_URL=https://rpc.eth.gateway.fm
-sudo docker-compose -f docker-compose-{network}.yml up -d
+sudo docker-compose -f docker-compose-mainnet.yml up -d
 ```
 
 ## View Logs of Docker Compose Service - Erigon
