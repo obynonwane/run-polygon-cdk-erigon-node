@@ -1,10 +1,10 @@
 # CDK Erigon Service
 
-This repository contains a systemd service file for managing the CDK Erigon application. The service is configured to run the CDK Erigon executable with a specified configuration file, ensuring it restarts automatically on failure.
+This repository contains a systemd service file for managing the CDK Erigon application, allowing it to run automatically with a specified configuration and restart on failure.
 
 ## Service File Overview
 
-The service file is designed to be used with systemd, which is the default init system for many Linux distributions. Below is a brief overview of the key components of the service file.
+The service file is designed for systemd, the default init system for many Linux distributions. Below is a brief overview of the key components.
 
 ### Service Configuration
 
