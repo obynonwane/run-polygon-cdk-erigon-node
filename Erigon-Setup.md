@@ -14,7 +14,7 @@ This guide provides step-by-step instructions to set up your development environ
    - [Install Wget](#install-wget)
    - [Install Go](#install-go)
 2. [Start Erigon Node using Binary](#start-erigon-node-using-binary)
-3. [Erigon Node with Docker & Docker Compose](#erigon-node-with-ocker-&-docker-ompose)
+3. [Erigon Node with Docker & Docker Compose](#erigon-node-with-docker-&-docker-compose)
 4. [Access Your Container](#access-your-container)
 5. [Stop The Docker Container](#stop-the-docker-container)
 6. [Start Erigon Node Using Docker Compose](#start-erigon-node-using-docker-compose)
