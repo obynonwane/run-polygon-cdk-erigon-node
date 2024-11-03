@@ -6,12 +6,13 @@
 This guide provides step-by-step instructions to set up your development environment with the necessary tools and start an Erigon node using Docker.
 
 ## Table of Contents
-1. [Clone the Repo](#clone-the-repo)
-2. [Install Required Tools](#install-required-tools)
+
+1. [Install Required Tools](#install-required-tools)
    - [Install C Compiler](#install-c-compiler)
    - [Install Wget](#install-wget)
    - [Install Go](#install-go)
    - [Install Docker and Docker Compose](#install-docker-and-docker-compose)
+2. [Start Erigon Node using Binary](#clone-the-repo)
 3. [Start Erigon Node using Docker](#start-erigon-node-using-docker)
 4. [Access Your Container](#access-your-container)
 5. [Stop The Docker Container](#stop-the-docker-container)
@@ -19,14 +20,7 @@ This guide provides step-by-step instructions to set up your development environ
 7. [View Logs of Docker Compose Service - Erigon](#view-logs-of-docker-compose-service---erigon)
 8. [Stop Docker Compose Service](#stop-docker-compose-service)
 
-## Clone the Repo
-To get started, clone the repository:
-```bash
-git clone https://github.com/0xPolygonHermez/cdk-erigon
-cd cdk-erigon/
-git checkout tags/<latest version>
-make build-libs
-```
+
 ## Install Required Tools
 
 ### Install C Compiler
@@ -78,6 +72,38 @@ make build-libs
    go version
    ```
 
+
+## Clone the Repo
+#### Run CD Erigon Node Using the Binary
+1. **Clone The Repository:**
+   ```bash
+   git clone https://github.com/0xPolygonHermez/cdk-erigon
+   ```
+2. **CD into the cloned Repository:**
+   ```bash
+   cd cdk-erigon/
+   ```
+3. **Checkout to the latest or recommended tag:**
+   ```bash
+   git checkout tags/<latest version>
+   ```
+4. **Install the relevant libraries for your architecture by running:**
+   ```bash
+   make build-libs
+   ```
+5. **Check version:**
+   ```bash
+   go version
+   ```
+6. **Build the node with the following command:**
+   ```bash
+   make cdk-erigon
+   ```
+6. **Setup the relevant Config file and execute the below command {network is either cardona or mainnet} use the example file as guide:**
+   ```bash
+   ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
+   ```
+
 #### Install Go version 1.21
 1. **Download:**
    ```bash
@@ -101,7 +127,7 @@ make build-libs
    go version
    ```
 
-### Install Docker and Docker Compose
+### Erigon Node with Docker Compose:
 
 1. **Update your package:**
    ```bash
