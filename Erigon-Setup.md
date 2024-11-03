@@ -1,9 +1,11 @@
 # Installation and Setup Guide
 
-[Official CDK Github Repository](https://github.com/0xPolygonHermez/cdk-erigon)
-[Official CDK Documentation](https://docs.polygon.technology/cdk/getting-started/cdk-erigon/deploy-cdk-erigon/)
+1. [Official CDK Github Repository](https://github.com/0xPolygonHermez/cdk-erigon)
+2. [Official CDK Documentation](https://docs.polygon.technology/cdk/getting-started/cdk-erigon/deploy-cdk-erigon/)
 
 This guide provides step-by-step instructions to set up your development environment with the necessary tools and start an Erigon node using Docker.
+
+#### NOTE: {network} could either be cardona  or mainnet in the contest of this file
 
 ## Table of Contents
 
@@ -13,7 +15,7 @@ This guide provides step-by-step instructions to set up your development environ
    - [Install Go](#install-go)
    - [Install Docker and Docker Compose](#install-docker-and-docker-compose)
 2. [Start Erigon Node using Binary](#clone-the-repo)
-3. [Start Erigon Node using Docker](#start-erigon-node-using-docker)
+3. [Erigon Node with Docker & Docker Compose](#start-erigon-node-using-docker)
 4. [Access Your Container](#access-your-container)
 5. [Stop The Docker Container](#stop-the-docker-container)
 6. [Start Erigon Node Using Docker Compose](#start-erigon-node-using-docker-compose)
@@ -48,8 +50,7 @@ This guide provides step-by-step instructions to set up your development environ
    ```
 
 ### Install Go
-
-#### Install Go version 1.19
+#### Install Go version 1.19 - [Note you only need one go version installation 1.19  or 1.21] 
 1. **Download:**
    ```bash
    wget https://go.dev/dl/go1.19.linux-amd64.tar.gz
@@ -71,7 +72,28 @@ This guide provides step-by-step instructions to set up your development environ
    ```bash
    go version
    ```
-
+#### Install Go version 1.21 [this is here incase you need to uninstall go 1.19 and install go 1.21]
+1. **Download:**
+   ```bash
+   wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+   ```
+2. **Remove Previous installation:**
+   ```bash
+   sudo rm -rf /usr/local/go
+   ```
+3. **Extract the archive:**
+   ```bash
+   sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+   ```
+4. **Setup the Go Path:**
+   ```bash
+   echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc 
+   source ~/.bashrc
+   ```
+5. **Check version:**
+   ```bash
+   go version
+   ```
 
 ## Start Erigon Node using Binary
 1. **Clone The Repository:**
@@ -103,30 +125,9 @@ This guide provides step-by-step instructions to set up your development environ
    ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
    ```
 
-#### Install Go version 1.21
-1. **Download:**
-   ```bash
-   wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
-   ```
-2. **Remove Previous installation:**
-   ```bash
-   sudo rm -rf /usr/local/go
-   ```
-3. **Extract the archive:**
-   ```bash
-   sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
-   ```
-4. **Setup the Go Path:**
-   ```bash
-   echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc 
-   source ~/.bashrc
-   ```
-5. **Check version:**
-   ```bash
-   go version
-   ```
+incase you need to manage your node using service file please look at the instruction here
 
-### Erigon Node with Docker & Docker Compose:
+### Erigon Node with Docker & Docker Compose
 #### Install Docker 
 1. **Update your package:**
    ```bash
