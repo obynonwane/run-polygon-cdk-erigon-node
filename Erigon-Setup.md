@@ -17,8 +17,13 @@ This guide provides step-by-step instructions to set up your development environ
 8. [Stop Docker Compose Service](#stop-docker-compose-service)
 
 ## Clone the Repo
-Clone the repository to your local machine.
-
+To get started, clone the repository:
+```bash
+git clone https://github.com/0xPolygonHermez/cdk-erigon
+cd cdk-erigon/
+git checkout tags/<latest version>
+make build-libs
+```
 ## Install Required Tools
 
 ### Install C Compiler
