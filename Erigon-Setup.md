@@ -194,9 +194,16 @@ sudo docker kill <container-id>
 
 ## Start Erigon Node Using Docker Compose File
 To start the Erigon node with Docker Compose, set the environment variables and run:
+# For testnet
 ```bash
 NETWORK=cardona 
 L1_RPC_URL=https://rpc.sepolia.org
+sudo docker-compose -f docker-compose-{network}.yml up -d
+```
+# For mainnet
+```bash
+NETWORK=mainnet 
+L1_RPC_URL=https://rpc.eth.gateway.fm
 sudo docker-compose -f docker-compose-{network}.yml up -d
 ```
 
