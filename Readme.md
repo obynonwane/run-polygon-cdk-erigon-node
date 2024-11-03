@@ -117,7 +117,7 @@ This guide provides step-by-step instructions to set up your development environ
    ```
 6. **Edit Config file & execute, {network} is either cardona or mainnet use the hermezconfig-example.yaml file as guide:**
    ```bash
-   ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
+   sudo ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
    ```
 
 incase you need to manage your running binaray  using service file please look at the instruction [here](https://github.com/obynonwane/run-polygon-cdk-erigon-node/blob/main/README-Unit-FIle.md)
