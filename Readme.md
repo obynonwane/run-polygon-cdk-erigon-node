@@ -111,11 +111,7 @@ This guide provides step-by-step instructions to set up your development environ
    ```bash
    make build-libs
    ```
-5. **Check version:**
-   ```bash
-   go version
-   ```
-6. **Build the node with the following command:**
+5. **Build the node with the following command:**
    ```bash
    make cdk-erigon
    ```
