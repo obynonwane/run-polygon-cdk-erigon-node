@@ -14,7 +14,7 @@ This guide provides step-by-step instructions to set up your development environ
    - [Install Wget](#install-wget)
    - [Install Go](#install-go)
 2. [Start Erigon Node using Binary](#start-erigon-node-using-binary)
-3. [Erigon Node with Docker & Docker Compose](#erigon-node-with-docker-&-docker-compose)
+3. [Erigon Node with Docker And Docker Compose](#erigon-node-with-docker-and-docker-compose)
 4. [Access Your Container](#access-your-container)
 5. [Stop The Docker Container](#stop-the-docker-container)
 6. [Start Erigon Node Using Docker Compose](#start-erigon-node-using-docker-compose)
@@ -124,9 +124,9 @@ This guide provides step-by-step instructions to set up your development environ
    ./build/bin/cdk-erigon --config="./hermezconfig-{network}.yaml"
    ```
 
-incase you need to manage your node using service file please look at the instruction here
+incase you need to manage your running binray  using service file please look at the instruction [here](https://github.com/obynonwane/run-polygon-cdk-erigon-node/blob/main/README-Unit-FIle.md)
 
-### Erigon Node with Docker & Docker Compose
+### Erigon Node with Docker And Docker Compose
 #### Install Docker 
 1. **Update your package:**
    ```bash
