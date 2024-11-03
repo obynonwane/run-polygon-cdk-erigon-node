@@ -73,8 +73,7 @@ This guide provides step-by-step instructions to set up your development environ
    ```
 
 
-## Clone the Repo
-#### Run CD Erigon Node Using the Binary
+## Start Erigon Node using Binary
 1. **Clone The Repository:**
    ```bash
    git clone https://github.com/0xPolygonHermez/cdk-erigon
