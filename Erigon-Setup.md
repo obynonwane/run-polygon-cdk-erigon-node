@@ -197,7 +197,7 @@ To start the Erigon node with Docker Compose, set the environment variables and 
 ```bash
 NETWORK=cardona 
 L1_RPC_URL=https://rpc.sepolia.org
-sudo docker-compose -f docker-compose-cardona.yml up -d
+sudo docker-compose -f docker-compose-{network}.yml up -d
 ```
 
 ## View Logs of Docker Compose Service - Erigon
