@@ -126,8 +126,8 @@ This guide provides step-by-step instructions to set up your development environ
    go version
    ```
 
-### Erigon Node with Docker Compose:
-
+### Erigon Node with Docker & Docker Compose:
+#### Install Docker 
 1. **Update your package:**
    ```bash
    sudo apt update
@@ -158,9 +158,7 @@ This guide provides step-by-step instructions to set up your development environ
    sudo usermod -aG docker $USER
    newgrp docker
    ```
-
-### Install Docker Compose
-
+#### Install Docker Compose
 1. **Download the Docker Compose binary:**
    ```bash
    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
