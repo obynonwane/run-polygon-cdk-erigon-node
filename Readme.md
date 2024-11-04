@@ -144,11 +144,11 @@ incase you need to manage your running binaray  using service file please look a
    ```bash
    sudo apt update
    ```
-6. **Verify that Docker is installed:**
+6. **Install docker:**
    ```bash
    sudo apt install docker-ce -y
    ```
-7. **(Optional) Run Docker without sudo:**
+7. **Verify installation:**
    ```bash
    sudo docker --version
    ```
